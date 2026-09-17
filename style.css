@@ -447,3 +447,29 @@ section {
   background-color: #2b5b84;
   color: #ffffff;
 }
+/* สไตล์สำหรับ Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .hero, 
+body.dark-mode .about,
+body.dark-mode header {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+body.dark-mode a {
+  color: #8ab4f8;
+}
+
+/* สไตล์ปุ่มกดสลับโหมด */
+.theme-btn {
+  background: none;
+  border: 1px solid #2b5b84;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: inherit;
+}
