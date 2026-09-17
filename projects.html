@@ -17,6 +17,7 @@
             <li><a href="experience.html">ประสบการณ์</a></li>
             <li><a href="projects.html" class="active">ผลงาน</a></li>
             <li><a href="contact.html">ติดต่อ</a></li>
+            <button id="theme-toggle" class="theme-btn">🌙 Dark Mode</button>
         </ul>
     </nav>
 </header>
@@ -81,5 +82,18 @@
     <p>&copy; 2569 พรรษชล บุญมี</p>
     <p>สร้างด้วย HTML และ CSS</p>
 </footer>
+<script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        if (document.body.classList.contains('dark-mode')) {
+          toggleBtn.textContent = '☀️ Light Mode';
+        } else {
+          toggleBtn.textContent = '🌙 Dark Mode';
+        }
+      });
+    }
+  </script>
 </body>
 </html>
