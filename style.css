@@ -466,10 +466,47 @@ body.dark-mode a {
 
 /* สไตล์ปุ่มกดสลับโหมด */
 .theme-btn {
-  background: none;
+  background-color: transparent;
   border: 1px solid #2b5b84;
-  padding: 6px 12px;
+  color: #2b5b84;
+  padding: 6px 14px;
   border-radius: 20px;
   cursor: pointer;
-  color: inherit;
+  font-size: 14px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  margin-left: 10px;
+}
+
+.theme-btn:hover {
+  background-color: #2b5b84;
+  color: #ffffff;
+}
+/* เมื่อเปิด Dark Mode */
+body.dark-mode {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+}
+
+/* เปลี่ยนสีกล่องข้อความ การ์ด และ Header */
+body.dark-mode header,
+body.dark-mode .hero,
+body.dark-mode .about,
+body.dark-mode div[class*="col"],
+body.dark-mode section {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode strong {
+  color: #90caf9 !important;
+}
+
+body.dark-mode .theme-btn {
+  border-color: #90caf9;
+  color: #90caf9;
 }
