@@ -510,3 +510,35 @@ body.dark-mode .theme-btn {
   border-color: #90caf9;
   color: #90caf9;
 }
+/* แก้ไขสีการ์ด กล่องทักษะ โครงงาน และตารางใน Dark Mode */
+body.dark-mode .skill-card,
+body.dark-mode .project-card,
+body.dark-mode .card,
+body.dark-mode table,
+body.dark-mode tr,
+body.dark-mode td,
+body.dark-mode th {
+  background-color: #242b35 !important;
+  color: #ffffff !important;
+  border-color: #374151 !important;
+}
+
+/* ปรับสีตัวอักษรภายในให้สว่างชัดเจน */
+body.dark-mode .skill-card *,
+body.dark-mode .project-card *,
+body.dark-mode table * {
+  color: #ffffff !important;
+}
+
+/* ปรับสีหัวข้อและข้อความย่อยในการ์ด */
+body.dark-mode .skill-card h3,
+body.dark-mode .project-card h3,
+body.dark-mode .skill-card p,
+body.dark-mode .project-card p {
+  color: #90caf9 !important;
+}
+
+/* ปรับสีแถบสลับตาราง (ถ้ามี) */
+body.dark-mode tr:nth-child(even) {
+  background-color: #1a202c !important;
+}
